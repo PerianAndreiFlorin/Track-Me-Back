@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackMeBack - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/design.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TrackMeBack___Management.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+</head>
+<body>
+    @{
+        switch (ViewData["LogOut"])
+        {
+            default:
+                if (ViewData["Title"] != "Autentificare" && ViewData["Title"] != "Resetare Parola")
+                {
+                    <header class="antet">
+                        <a class="btn btn-primary buton_header" asp-action="Home">Înapoi</a>
+                        <img style="height:65px;padding:5px;padding-right:0" src="~/logo_upt.jpg" />
+                    </header>
+                }
+                else
+                {
+                    <header class="antet">
+                        <img style="height:65px;padding:5px;padding-right:0" src="~/logo_upt.jpg" />
+                    </header>
+                }
+                break;
+            case true:
+                <header class="antet">
+                    <a class="btn btn-primary buton_header" asp-action="Autentificare" asp-controller="Home">Log Out</a>
+                    <img style="height:65px;padding:5px;padding-right:0" src="~/logo_upt.jpg" />
+                </header>
+                break;
+        }
+    }
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="subsol text-muted">
+        Universitatea Politehnica Timișoara - Facultatea Automatică și Calculatoare - Informatică
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

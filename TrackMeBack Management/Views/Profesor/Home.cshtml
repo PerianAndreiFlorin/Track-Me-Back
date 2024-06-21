@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    ViewData["LogOut"] = true;
+}
+
+<div class="aliniere_orizontal">
+
+    <div class="vertical_card aliniere_vertical" style="margin-top:20%">
+        <h1>Status Studenți</h1>
+        <hr />
+        <p class="text-muted">Lista Studenților Prezenți.</p>
+        <img style="width:150px;height:auto;align-self:center;margin-bottom:25px;margin-top:35px" src="~/imagini_svg/profesor.svg" />
+        <a style="margin-top:50px" class="btn btn-primary" asp-action="Status_Studenti">Deschide</a>
+    </div>
+
+    <div class="aliniere_vertical vertical_card" style="margin-top:20%;margin-left:50px;margin-right:50px">
+        <h1>Notare Studenți</h1>
+        <hr />
+        <p class="text-muted">Adăugarea de note pentru Studenții prezenți.</p>
+        <img style="width:150px;height:auto;align-self:center;margin-bottom:25px;margin-top:35px" src="~/imagini_svg/discipline.svg" />
+        <a style="margin-top:50px" class="btn btn-primary" asp-action="Notare_Studenti">Deschide</a>
+    </div>
+
+</div>

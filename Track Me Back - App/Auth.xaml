@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Track_Me_Back___App.Auth">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+            <Label
+            Text="Track Me Back - App"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+
+            <Label>Email</Label>
+            <Entry
+            SemanticProperties.Hint="Email"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            x:Name="Email_Input"
+            />
+            <Label>Parola</Label>
+            <Entry
+            SemanticProperties.Hint="Parola"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            IsPassword="True"
+            x:Name="Parola_Input"
+            />
+
+            <Button
+            x:Name="AuthBtn"
+            Text="Log In" 
+            SemanticProperties.Hint="Buton Login"
+            Clicked="OnAutentificareClicked"
+            HorizontalOptions="Fill" />
+
+            <Button
+            x:Name="ResetBtn"
+            Text="Ai uitat parola?"
+            
+            HorizontalOptions="Fill"
+            />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,65 @@
+﻿@model TrackMeBack_Management.Models.Autentificare.Resetare_Parola_Model
+@{
+    ViewData["Title"] = "Resetare Parola";
+}
+
+<div class="autentificare_card aliniere_vertical" style="position:absolute;left:0;height:100%;width:500px;z-index:-1;padding-top:5%">
+    <h1>Resetare Parolă</h1>
+    <hr />
+    <div class="col-md-4">
+        <form asp-action="Resetare_Parola">
+            <div class="form-group" style="width:300px">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+
+            @switch (ViewData["cod_trimis"])
+            {
+                default:
+                    <div class="aliniere_orizontal" style="margin-top:25px">
+                        <a class="btn btn-primary" asp-controller="Home" asp-action="Autentificare">Înapoi</a>
+                        <input type="submit" value="Trimite Cod" class="btn btn-primary" style="margin:5px" />
+                    </div>
+                    break;
+                case true:
+
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="parola_nou" class="control-label"></label>
+                        <input asp-for="parola_nou" class="form-control" />
+                        <span asp-validation-for="parola_nou" class="text-danger"></span>
+                    </div>
+                    <hr style="width:300px;margin-top:30px;margin-bottom:30px" />
+
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="cod_reset" class="control-label"></label>
+                        <input asp-for="cod_reset" class="form-control" />
+                        <span asp-validation-for="cod_reset" class="text-danger"></span>
+                    </div>
+
+                    <div class="aliniere_orizontal" style="margin-top:25px">
+                        <a class="btn btn-primary" asp-controller="Home" asp-action="Autentificare">Înapoi</a>
+                        <input type="submit" value="Reset" class="btn btn-primary" style="margin:5px" />
+                    </div>
+                    break;
+            }
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+@if (TempData["Mesaj_Eroare"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        toastr.error('@TempData["Mesaj_Eroare"]');
+    </script>
+}

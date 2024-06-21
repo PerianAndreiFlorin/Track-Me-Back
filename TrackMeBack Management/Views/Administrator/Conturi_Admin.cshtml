@@ -1,0 +1,100 @@
+﻿@model TrackMeBack_Management.Models.Autentificare.Editare_Admin_Model
+@using TrackMeBack_Management.Clase_Utilitare.Servicii
+@{
+    ViewData["Title"] = "Info Administrative";
+    List<string> lista_utilizatori = Servicii_ListareMongoDB.Listare_TB_Administrare();
+}
+
+<div style="background-color:white;position:absolute;left:0;bottom:0;width:100%;height:100%;z-index:-6"></div>
+
+<div class="aliniere_orizontal" style="position:absolute;left:2%;top:20%">
+    <div style="margin-right:250px">
+        <h4>Editarea Conturilor Administrative</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Conturi_Admin">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="actiune" class="control-label"></label>
+                        <select asp-for="actiune" class="form-control">
+                            <option value="Editare">Editare</option>
+                            <option value="Adaugare">Adăugare</option>
+                            <option value="Stergere">Ștergere</option>
+                        </select>
+                    </div>
+
+                    <hr style="width:300px"/>
+
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="email" class="control-label"></label>
+                        <input list="utilizatori" asp-for="email" name="email" class="form-control" />
+                        <span asp-validation-for="email" class="text-danger"></span>
+                        <datalist id="utilizatori">
+                            @foreach (var utilizator in lista_utilizatori)
+                            {
+                                <option value="@utilizator" />
+                            }
+                        </datalist>
+                    </div>
+
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="parola_nou" class="control-label"></label>
+                        <input asp-for="parola_nou" class="form-control" />
+                        <span asp-validation-for="parola_nou" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group" style="margin-top:15px;margin-bottom:50px">
+                        <input type="submit" value="Salvează" class="btn btn-primary" />
+                    </div>
+
+                    <div class="aliniere_vertical text-muted" style="width:400px">
+                        <p>În cazul ștergerii "Parola Nouă" nu este relevantă.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width:1px;height:500px;margin-right:100px"/>
+
+    <div class="aliniere_vertical">
+        <h4>Lista Email-urilor cu scop administrativ</h4>
+        <hr />
+        <div style="overflow:scroll;height:400px">
+            <ul>
+                @foreach (var utilizator in lista_utilizatori)
+                {
+                    <li>@utilizator</li>
+                }
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+@* Afișarea Mesajelor de Informare și Eroare. *@
+@if (TempData["Mesaj_Eroare"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        toastr.error('@TempData["Mesaj_Eroare"]');
+    </script>
+}
+
+@if (TempData["Mesaj_Info"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        toastr.info('@TempData["Mesaj_Info"]');
+    </script>
+}

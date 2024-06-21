@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             x:Class="Track_Me_Back___App.Scanner_Profesor"
+             Title="Scanner_Profesor">
+    <VerticalStackLayout>
+        <Label
+            Text="Scanează Codul QR"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+        
+        <zxing:CameraBarcodeReaderView
+            x:Name="cititor_QR"
+            BarcodesDetected="cititor_QR_BarcodesDetected"
+            />
+
+        <Button
+           x:Name="BackBtn"
+           Text="Înapoi" 
+           Clicked="BackBtn_Clicked"
+           HorizontalOptions="Fill" Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>

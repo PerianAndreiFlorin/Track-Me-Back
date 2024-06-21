@@ -1,0 +1,77 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Track_Me_Back___App
+build_property.ProjectDir = C:\Users\Adeus\source\repos\Track Me Back - App\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/Auth.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.Auth.xaml
+build_metadata.AdditionalFiles.TargetPath = Auth.xaml
+build_metadata.AdditionalFiles.RelativePath = Auth.xaml
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/Profil_Profesor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.Profil_Profesor.xaml
+build_metadata.AdditionalFiles.TargetPath = Profil_Profesor.xaml
+build_metadata.AdditionalFiles.RelativePath = Profil_Profesor.xaml
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/Profil_Student.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.Profil_Student.xaml
+build_metadata.AdditionalFiles.TargetPath = Profil_Student.xaml
+build_metadata.AdditionalFiles.RelativePath = Profil_Student.xaml
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/Scanner_Profesor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.Scanner_Profesor.xaml
+build_metadata.AdditionalFiles.TargetPath = Scanner_Profesor.xaml
+build_metadata.AdditionalFiles.RelativePath = Scanner_Profesor.xaml
+
+[C:/Users/Adeus/source/repos/Track Me Back - App/Scanner_Student.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Track_Me_Back___App.Scanner_Student.xaml
+build_metadata.AdditionalFiles.TargetPath = Scanner_Student.xaml
+build_metadata.AdditionalFiles.RelativePath = Scanner_Student.xaml

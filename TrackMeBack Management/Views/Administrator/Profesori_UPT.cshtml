@@ -1,0 +1,145 @@
+﻿@model TrackMeBack_Management.Models.Utilizator.Editare_Profesor_Model
+@using TrackMeBack_Management.Clase_Utilitare.Servicii
+@{
+    List<List<string>> lista_profesori = Servicii_ListareMongoDB.Listare_Utilizator("profesor");
+    ViewData["Title"] = "Profesori UPT";
+}
+
+<div style="background-color:white;position:absolute;left:0;bottom:0;width:100%;height:100%;z-index:-6"></div>
+<h1>Profesori Facultate</h1>
+
+<div class="aliniere_orizontal" style="position:absolute;left:2%;top:15%">
+
+    <div class="aliniere_vertical" style="margin-right:100px">
+
+        <h4>Editarea Manuală a Profesorilor UPT</h4>
+        <hr style="width:300px" />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Profesori_UPT">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="marca" class="control-label">Marca</label>
+                        <input list="profesori" asp-for="marca" class="form-control" />
+                        <datalist id="profesori">
+                            @foreach (var profesor in lista_profesori)
+                            {
+                                <option value="@profesor[0]" />
+                            }
+                        </datalist>
+                        <span asp-validation-for="marca" class="text-danger"></span>
+                    </div>
+                    <h6 class="text-muted" style="width:300px;margin-top:10px">Marca este folosită pentru selecții și nu poate fi modificată!</h6>
+
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="actiune" class="control-label"></label>
+                        <select asp-for="actiune" class="form-control">
+                            <option value="Editare">Editare</option>
+                            <option value="Adaugare">Adăugare</option>
+                            <option value="Stergere">Ștergere</option>
+                        </select>
+                    </div>
+
+                    <hr style="width:300px" />
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="nume" class="control-label"></label>
+                        <input asp-for="nume" class="form-control" />
+                        <span asp-validation-for="nume" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="prenume" class="control-label"></label>
+                        <input asp-for="prenume" class="form-control" />
+                        <span asp-validation-for="prenume" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="facultate" class="control-label"></label>
+                        <select asp-for="facultate" class="form-control">
+                            <option value="AC">AC</option>
+                            <option value="CT">CT</option>
+                            <option value="IEEE">IEEE</option>
+                            <option value="ETcTI">ETcTI</option>
+                            <option value="ARH">ARH</option>
+                            <option value="MPT">MPT</option>
+                            <option value="CIIM">CIIM</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="parola" class="control-label"></label>
+                        <input asp-for="parola" class="form-control" />
+                        <span asp-validation-for="parola" class="text-danger"></span>
+                    </div>
+                    <h6 class="text-muted" style="width:300px;margin-top:10px">În cazul Ștergerii doar MARCA este relevantă!</h6>
+                    <div class="form-group">
+                        <input type="submit" value="Salvează" class="btn btn-primary" style="margin-top:15px;margin-bottom:50px" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr style="height:500px;width:1px;margin-right:100px" />
+
+    <div class="aliniere_vertical" style="width:550px">
+        <h4>Lista Profesorilor UPT</h4>
+        <hr />
+        <div style="overflow:scroll;height:400px">
+            <table border="1" style="text-align:center">
+                <th>Marca</th>
+                <th>Nume</th>
+                <th>Prenume</th>
+                <th>Email</th>
+                <tbody>
+                    @foreach (List<string> profesor in lista_profesori)
+                    {
+                        <tr style="border:solid;border-width:1px">
+                            @foreach (string detaliu in profesor)
+                            {
+                                @if (detaliu != "-")
+                                {
+                                    <td style="border:solid;border-width:1px;width:100px">@detaliu</td>
+                                }
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        
+        <hr style="margin-top:10px;margin-bottom:10px" />
+        <div class="aliniere_vertical" style="width:300px;margin-top:25px">
+            <h4 style="width:500px">Agăugarea Profesorilor - Microsoft Excel</h4>
+            <hr style="width:500px" />
+            <div class="aliniere_orizontal" style="width:500px">
+                <a class="btn btn-primary" style="height:50px;width:350px;margin-right:25px" href="ms-excel:ofe|u|file:///C:/Users/Adeus/source/repos/TrackMeBack Management/Models/Fisiere_Excel/Excel_Profesor.xlsx">Deschide în Excel</a>
+                <a class="btn btn-primary" style="height:50px;width:350px" asp-action="Adaugare_Profesor_Excel" asp-controller="Administrator">Salvează datele Excel</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+@* Afișarea Mesajelor de Informare și Eroare. *@
+@if (TempData["Mesaj_Eroare"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        toastr.error('@TempData["Mesaj_Eroare"]');
+    </script>
+}
+
+@if (TempData["Mesaj_Info"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        toastr.info('@TempData["Mesaj_Info"]');
+    </script>
+}

@@ -1,0 +1,143 @@
+﻿@model TrackMeBack_Management.Models.Orar.Editare_Orar_Model
+@using TrackMeBack_Management.Clase_Utilitare.Servicii
+@{
+    ViewData["Title"] = "Orar UPT";
+    List<string> lista_sali = Servicii_ListareMongoDB.Listare_Coduri_Sali();
+    List<string> lista_materii = Servicii_ListareMongoDB.Listare_Materii_UPT("INFO");
+    List<List<string>> lista_orar = Servicii_ListareMongoDB.Listare_Orar();
+}
+<div style="background-color:white;position:absolute;left:0;bottom:0;width:100%;height:100%;z-index:-6"></div>
+
+<div class="aliniere_orizontal" style="position:absolute;left:2%;top:15%">
+
+    <div class="aliniere_vertical">
+
+        <h4>Editare Orar Model</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Orar_UPT">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="actiune" class="control-label"></label>
+                        <select asp-for="actiune" class="form-control">
+                            <option value="Adaugare">Adăugare</option>
+                            <option value="Stergere">Ștergere</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="ziua" class="control-label"></label>
+                        <select asp-for="ziua" class="form-control">
+                            <option value="Monday">Luni</option>
+                            <option value="Tuesday">Marți</option>
+                            <option value="Wednesday">Miercuri</option>
+                            <option value="Thursday">Joi</option>
+                            <option value="Friday">Vineri</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="ora_start" class="control-label"></label>
+                        <input asp-for="ora_start" class="form-control" />
+                        <span asp-validation-for="ora_start" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="materia" class="control-label"></label>
+                        <select asp-for="materia" class="form-control">
+                            @foreach (string materie in lista_materii)
+                            {
+                                <option value=@materie>@materie</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="sala" class="control-label"></label>
+                        <select asp-for="sala" class="form-control">
+                            @foreach(string sala in lista_sali)
+                            {
+                                <option value=@sala>@sala</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="grupa" class="control-label"></label>
+                        <select asp-for="grupa" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Salvează" style="margin-top:10px" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr style="height:500px;width:1px;margin-right:100px" />
+
+    <div class="aliniere_vertical" style="width:750px">
+        <h4>Lista Orar UPT</h4>
+        <hr />
+        <div style="overflow:scroll;height:400px">
+            <table border="1" style="text-align:center">
+                <th>Materia</th>
+                <th>Specializarea</th>
+                <th>Ora</th>
+                <th>Ziua</th>
+                <th>Sala</th>
+                <th>Anul</th>
+                <th>Grupa</th>
+                
+                <tbody>
+                    @foreach (List<string> orar in lista_orar)
+                    {
+                        <tr style="border:solid;border-width:1px">
+                            @foreach (string detaliu in orar)
+                            {
+                                    <td style="border:solid;border-width:1px;width:200px">@detaliu</td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <hr style="margin-top:10px;margin-bottom:10px" />
+        <div class="aliniere_vertical" style="width:300px;margin-top:25px">
+            <h4 style="width:500px">Agăugarea Profesorilor - Microsoft Excel</h4>
+            <hr style="width:500px" />
+            <div class="aliniere_orizontal" style="width:500px">
+                <a class="btn btn-primary" style="height:50px;width:350px;margin-right:25px" href="ms-excel:ofe|u|file:///C:/Users/Adeus/source/repos/TrackMeBack Management/Models/Fisiere_Excel/Excel_Orar.xlsx">Deschide în Excel</a>
+                <a class="btn btn-primary" style="height:50px;width:350px" asp-action="Adaugare_Orar_Excel" asp-controller="Secretariat">Salvează datele Excel</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+@* Afișarea Mesajelor de Informare și Eroare. *@
+@if (TempData["Mesaj_Eroare"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        toastr.error('@TempData["Mesaj_Eroare"]');
+    </script>
+}
+
+@if (TempData["Mesaj_Info"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        toastr.info('@TempData["Mesaj_Info"]');
+    </script>
+}

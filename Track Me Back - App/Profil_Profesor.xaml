@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Track_Me_Back___App.Profil_Profesor">
+    <VerticalStackLayout>
+
+        <Button
+           x:Name="LogOutBtn"
+           Text="LogOut" 
+           SemanticProperties.Hint="Buton LogOut"
+           Clicked="LogOutBtn_Clicked"
+           HorizontalOptions="Start"  ScaleX=".7" ScaleY=".7" />
+
+        <Label
+            Text="Profil Profesor"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+        <Label 
+            x:Name="Label_Nume_Profesor"
+            Text="Nume: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            x:Name="Label_Marca_Profesor"
+            Text="Marca: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            x:Name="Label_Facultate_Profesor"
+            Text="Facultate: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Descoperă traseul / Începe ora"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+           x:Name="ScannerBtn"
+           Text="Scanner" 
+           SemanticProperties.Hint="Buton Scanner"
+           Clicked="ScannerBtn_Clicked"
+           HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>

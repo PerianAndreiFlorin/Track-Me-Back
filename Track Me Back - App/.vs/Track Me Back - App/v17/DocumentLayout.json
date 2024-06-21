@@ -1,0 +1,246 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\claseutilitare\\servicii_mongodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:claseutilitare\\servicii_mongodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\profil_profesor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:profil_profesor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\claseutilitare\\management_utilizatorcurent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:claseutilitare\\management_utilizatorcurent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\profil_student.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:profil_student.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\scanner_profesor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:scanner_profesor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\profil_profesor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:profil_profesor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\properties\\usersettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:properties\\usersettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\auth.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:auth.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\claseutilitare\\sistem_start_ora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:claseutilitare\\sistem_start_ora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\claseutilitare\\sistemprezenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:claseutilitare\\sistemprezenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\scanner_student.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:scanner_student.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\profil_student.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:profil_student.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|c:\\users\\adeus\\source\\repos\\track me back - app\\scanner_profesor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD14835-D259-4066-B5D0-57360B0653E7}|Track Me Back - App.csproj|solutionrelative:scanner_profesor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profil_Profesor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Profil_Profesor.xaml.cs",
+              "RelativeDocumentMoniker": "Profil_Profesor.xaml.cs",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Profil_Profesor.xaml.cs",
+              "RelativeToolTip": "Profil_Profesor.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T09:04:52.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Profil_Profesor.xaml",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Profil_Profesor.xaml",
+              "RelativeDocumentMoniker": "Profil_Profesor.xaml",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Profil_Profesor.xaml",
+              "RelativeToolTip": "Profil_Profesor.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-21T09:04:49.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Management_UtilizatorCurent.cs",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\ClaseUtilitare\\Management_UtilizatorCurent.cs",
+              "RelativeDocumentMoniker": "ClaseUtilitare\\Management_UtilizatorCurent.cs",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\ClaseUtilitare\\Management_UtilizatorCurent.cs",
+              "RelativeToolTip": "ClaseUtilitare\\Management_UtilizatorCurent.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAFwAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T09:02:21.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "userSettings.json",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Properties\\userSettings.json",
+              "RelativeDocumentMoniker": "Properties\\userSettings.json",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Properties\\userSettings.json",
+              "RelativeToolTip": "Properties\\userSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-21T08:38:07.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-21T08:32:37.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Auth.xaml",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Auth.xaml",
+              "RelativeDocumentMoniker": "Auth.xaml",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Auth.xaml",
+              "RelativeToolTip": "Auth.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-21T08:32:34.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SistemPrezenta.cs",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\ClaseUtilitare\\SistemPrezenta.cs",
+              "RelativeDocumentMoniker": "ClaseUtilitare\\SistemPrezenta.cs",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\ClaseUtilitare\\SistemPrezenta.cs",
+              "RelativeToolTip": "ClaseUtilitare\\SistemPrezenta.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T19:52:10.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Profil_Student.xaml",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Profil_Student.xaml",
+              "RelativeDocumentMoniker": "Profil_Student.xaml",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Profil_Student.xaml",
+              "RelativeToolTip": "Profil_Student.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-20T19:14:42.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Servicii_MongoDB.cs",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\ClaseUtilitare\\Servicii_MongoDB.cs",
+              "RelativeDocumentMoniker": "ClaseUtilitare\\Servicii_MongoDB.cs",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\ClaseUtilitare\\Servicii_MongoDB.cs",
+              "RelativeToolTip": "ClaseUtilitare\\Servicii_MongoDB.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAHwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T17:52:25.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Profil_Student.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Profil_Student.xaml.cs",
+              "RelativeDocumentMoniker": "Profil_Student.xaml.cs",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Profil_Student.xaml.cs",
+              "RelativeToolTip": "Profil_Student.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T09:06:07.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Scanner_Profesor.xaml",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Scanner_Profesor.xaml",
+              "RelativeDocumentMoniker": "Scanner_Profesor.xaml",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Scanner_Profesor.xaml",
+              "RelativeToolTip": "Scanner_Profesor.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-20T19:14:20.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Scanner_Student.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Scanner_Student.xaml.cs",
+              "RelativeDocumentMoniker": "Scanner_Student.xaml.cs",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Scanner_Student.xaml.cs",
+              "RelativeToolTip": "Scanner_Student.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCcAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T19:02:32.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Scanner_Profesor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Scanner_Profesor.xaml.cs",
+              "RelativeDocumentMoniker": "Scanner_Profesor.xaml.cs",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\Scanner_Profesor.xaml.cs",
+              "RelativeToolTip": "Scanner_Profesor.xaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwC4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:00:56.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Sistem_Start_Ora.cs",
+              "DocumentMoniker": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\ClaseUtilitare\\Sistem_Start_Ora.cs",
+              "RelativeDocumentMoniker": "ClaseUtilitare\\Sistem_Start_Ora.cs",
+              "ToolTip": "C:\\Users\\Adeus\\source\\repos\\Track Me Back - App\\ClaseUtilitare\\Sistem_Start_Ora.cs",
+              "RelativeToolTip": "ClaseUtilitare\\Sistem_Start_Ora.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwDYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T21:23:38.471Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+﻿@model TrackMeBack_Management.Models.Harta.Editare_Admin_Sala_Model
+@using TrackMeBack_Management.Clase_Utilitare.Servicii
+@using TrackMeBack_Management.Models.Harta
+@{
+    ViewData["Title"] = "Harta UPT";
+    List<List<string>> lista_sali = Servicii_ListareMongoDB.Listare_Harta_UPT();
+    List<string> lista_cladiri = Servicii_ListareMongoDB.Listare_Cladiri_UPT();
+}
+
+<div style="background-color:white;position:absolute;left:0;bottom:0;width:100%;height:100%;z-index:-6"></div>
+
+<h1>Harta UPT</h1>
+<div class="aliniere_orizontal" style="position:absolute;left:2%;top:20%">
+
+    <div class="aliniere_vertical" style="margin-right:100px">
+
+        <h4>Editarea Manuală a Sălilor UPT</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Harta_UPT">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="actiune" class="control-label"></label>
+                        <select asp-for="actiune" class="form-control">
+                            <option value="Adaugare">Adăugare</option>
+                            <option value="Stergere">Ștergere</option>
+                        </select>
+                    </div>
+                    <hr style="width:300px" />
+
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="cladire" class="control-label"></label>
+                        <select asp-for="cladire" class="form-control">
+                            @foreach(string cladire in lista_cladiri)
+                            {
+                                <option value="@cladire">@cladire</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="corp" class="control-label"></label>
+                        <input asp-for="corp" class="form-control" />
+                        <span asp-validation-for="corp" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="width:300px">
+                        <label asp-for="index" class="control-label"></label>
+                        <input asp-for="index" class="form-control" />
+                        <span asp-validation-for="index" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Salvează" class="btn btn-primary" style="margin-top:15px;margin-bottom:50px" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <hr style="height:500px;width:1px;margin-right:100px"/>
+
+    <div class="aliniere_vertical" style="width:500px">
+        <h4>Lista Clădirilor UPT</h4>
+        <hr />
+        <div style="overflow:scroll;height:400px">
+            <table border="1" style="text-align:center">
+                <th>Clădire</th>
+                <th>Corp</th>
+                <th>Index</th>
+                <th>Cod QR</th>
+                <tbody>
+                    @foreach (List<string> sala in lista_sali)
+                    {
+                        @if(sala[0]!="-")
+                        {
+                            <tr style="border:solid;border-width:1px">
+                                    @foreach (string detaliu in sala)
+                                    {
+                                        if (detaliu.Contains("data:image"))
+                                        {
+                                        <td><img src="@detaliu" style="height:50px;width:50px" /></td>
+                                        }
+                                        else
+                                        {
+                                        <td style="border:solid;border-width:1px;width:100px">@detaliu</td>
+                                        }
+                                    }
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <hr style="margin-top:10px;margin-bottom:10px"/>
+        <div class="aliniere_vertical" style="width:300px;margin-top:25px">
+            <h4 style="width:500px">Agăugarea Sălilor - Microsoft Excel</h4>
+            <hr style="width:500px" />
+            <div class="aliniere_orizontal" style="width:500px">
+                <a class="btn btn-primary" style="height:50px;width:350px;margin-right:25px" href="ms-excel:ofe|u|file:///C:/Users/Adeus/source/repos/TrackMeBack Management/Models/Fisiere_Excel/Excel_Harta.xlsx">Deschide în Excel</a>
+                <a class="btn btn-primary" style="height:50px;width:350px" asp-action="Adaugare_Sala_Excel" asp-controller="Administrator">Salvează datele Excel</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+@* Afișarea Mesajelor de Informare și Eroare. *@
+@if (TempData["Mesaj_Eroare"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        toastr.error('@TempData["Mesaj_Eroare"]');
+    </script>
+}
+
+@if (TempData["Mesaj_Info"] != null)
+{
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        toastr.info('@TempData["Mesaj_Info"]');
+    </script>
+}
